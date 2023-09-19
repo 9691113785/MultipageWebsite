@@ -1,0 +1,243 @@
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+background-color: black;
+    font-weight: bold;
+    padding: 0% 3%;
+    position: sticky;
+    top: 0px;
+    z-index: 4;
+}
+
+.logo {
+    width: 8%;
+    margin-left: 10px;
+}
+
+.logo>img {
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    box-sizing: content-box;
+}
+
+.navbar>a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 10%;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.5s;
+}
+
+.navbar>a:hover {
+    transform: scale(1.2);
+    color: rgb(212, 133, 69);
+}
+
+.toggle-logo {
+    display: none;
+}
+
+#navbartoggle {
+    
+    flex-direction: column;
+    text-align: center;
+    display: none;
+    box-sizing: border-box;
+    padding: 0.5%;
+    background-color: black;
+}
+
+#navbartoggle>a>i {
+    margin-right: 10px;
+}
+
+#navbartoggle>a {
+    text-decoration: none;
+    margin: 2%;
+    transition: transform 0.5s;
+    color: white;
+}
+
+#navbartoggle>a:hover {
+    transform: scale(0.8);
+    color: rgb(212, 133, 69);
+}
+
+
+.register-container{
+    display: grid;
+    /* grid-template-columns: 45% 55%; */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 2% 10%;
+border-radius: 10px;
+background-color: white;
+box-shadow: 2px 2px 20px grey;
+}
+h1{
+    color: rgb(30, 146, 172);
+}
+.grid_1{
+    background-image: url(https://images.unsplash.com/photo-1514316454349-750a7fd3da3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+  border-radius: 10px 0px 0px 10px;
+    
+}
+.grid_2{
+    padding: 5% 10%;
+}
+.form{
+display: flex;
+justify-content: center;
+
+}
+fieldset legend{
+    color: rgb(12, 13, 13);
+}
+fieldset{
+    border: 2px solid rgb(108, 190, 209);
+    border-radius: 5px;
+    background-color: rgb(232, 240, 254);
+
+}
+fieldset:hover{
+    border: 2px solid rgb(30, 146, 172);
+}
+fieldset input{
+    width: 100%;
+    border: none;
+    outline: 0px;
+    background-color: rgb(232, 240, 254);
+}
+label{
+    font-size: 10px
+}
+input[type="submit"]{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(30, 146, 172);
+    border: none;
+    padding: 2% 5%;
+   margin: auto;
+    width: 40%;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    margin-top: 1%;
+}
+.terms{
+    display: flex;
+    align-items: center;
+}
+input[type="checkbox"]{
+    accent-color: rgb(30, 146, 172);
+}
+input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: rgb(41, 187, 220);
+}
+form>a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    justify-content: space-around;
+    background-color: rgb(232, 234, 237);
+    padding: 5px 10px;
+    font-size: 13px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+form>a img{
+    width: 20px;
+}
+form>a:hover{
+    background-color: rgb(218, 221, 225);
+
+}
+form span{
+    color: rgb(30, 146, 172);
+}
+.login{
+    display: flex;
+    justify-content: center;
+}
+
+input[type="file"]::file-selector-button{
+   display: none;
+}
+.browsebtn{
+    background-color: rgb(172, 80, 30);
+    border: none;
+    padding: 5px 5%;
+    border-radius: 1px;
+    color: white;
+    font-weight: bold;
+    width: 35%;
+    text-align: center;
+    margin-right: 2%;
+}
+.browsecontainer{
+    display: flex;
+    align-items: center;
+   
+}
+
+
+
+#formsubmit>span{
+    color: red;
+}
+
+
+
+
+.footer{
+    text-align: center;
+    background-color: rgb(199, 191, 191);
+    padding-bottom: 50px;
+}
+.footer>img{
+    width: 5%;
+}
+.footer>div{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    
+    width: 5%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
+
+@media only screen and (max-width:650px) {
+
+    .toggle-logo {
+        display: block;
+        color: white;
+    }
+
+    .navbar {
+        display: none;
+
+    }
+   
+    header{
+        padding: 1% 3%;
+    }
+    
+}
+

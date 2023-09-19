@@ -1,0 +1,47 @@
+.aboutme{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 5%;
+    padding: 4% 8%; 
+}
+.profile_pic{
+    width: 70%;
+    margin: auto;
+    height: 300px;
+background: url(../images/alok.jpg);
+background-size: cover;
+background-position: center;
+box-shadow: 5px 5px 10px black;
+border: 2px solid black;
+}
+.portfolio_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.portfolio_div>div{
+    display: flex;
+    justify-content: space-between;
+}
+.portfolio_div>div>hr{
+    width: 20%;
+    margin-left: 0px;
+    height: 4px;
+    background-color: rgb(138, 137, 137);
+    border: none;
+    outline: none;
+}
+.portfolio_div>div>hr:first-child{
+    background-color: rgb(236, 128, 5);
+}
+
+@media only screen and (max-width:600px) {
+
+    .aboutme{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5%;
+    padding: 4% 8%; 
+    margin-bottom: 30px;
+}
+}

@@ -1,0 +1,325 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    /* background:url(https://4kwallpapers.com/images/wallpapers/ios-13-stock-dark-green-black-background-amoled-ipad-hd-4480x2520-791.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: scroll; */
+    background-color: rgb(232, 229, 229);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+background-color: black;
+    font-weight: bold;
+    padding: 0% 3%;
+    position: sticky;
+    top: 0px;
+    z-index: 4;
+}
+
+.logo {
+    width: 8%;
+    margin-left: 10px;
+}
+
+.logo>img {
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    box-sizing: content-box;
+}
+
+.navbar>a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 10%;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.5s;
+}
+
+.navbar>a:hover {
+    transform: scale(1.2);
+    color: rgb(212, 133, 69);
+}
+
+.toggle-logo {
+    display: none;
+}
+
+#navbartoggle {
+    
+    flex-direction: column;
+    text-align: center;
+    display: none;
+    box-sizing: border-box;
+    padding: 0.5%;
+    background-color: black;
+}
+
+#navbartoggle>a>i {
+    margin-right: 10px;
+}
+
+#navbartoggle>a {
+    text-decoration: none;
+    margin: 2%;
+    transition: transform 0.5s;
+    color: white;
+}
+
+#navbartoggle>a:hover {
+    transform: scale(0.8);
+    color: rgb(212, 133, 69);
+}
+
+#slider{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 450px;
+    
+    
+}
+#slider>div>img{
+    width: 100%;
+    height: 450px;
+}
+#slider>i{
+    z-index: 2;
+    margin-top: 200px;
+    margin-bottom: 210px;
+color: azure;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 1px;
+}
+#slider>i:hover{
+    background-color: rgb(224, 229, 229,0.3);
+ 
+    cursor: pointer;
+
+}
+#slider>div{
+    position: absolute;
+    width: 100%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    grid-gap:10px;
+    margin: 2% 0px;
+}
+.filter{
+    background-color: rgb(236, 234, 234,0.2);
+    padding: 4%;
+    font-weight: bold ;
+    height: 450px;
+    overflow-y: scroll;
+}
+.filter>h2{
+    color: white;
+    background-color: rgb(212, 133, 69);
+    text-align: center;
+    color: white;
+    padding: 2%;
+}
+.filter>h2,.filter>input,.filter>label{
+    margin: 10px;
+}
+.filter>label:hover{
+    color: rgb(212, 133, 69);
+    cursor: pointer;
+}
+.filter>input{
+    display: inline-block;
+            width: 17px;
+            height: 17px;
+            accent-color: rgb(212, 133, 69);
+            border-radius: 3px;
+            vertical-align: middle;
+            cursor: pointer;
+}
+
+
+
+/* Target the scrollbar of a specific container with a class name */
+.filter::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
+  }
+  
+  /* Style the track (the background of the scrollbar) */
+  .filter::-webkit-scrollbar-track {
+    background: none;
+  }
+  
+  /* Style the thumb (the draggable part of the scrollbar) */
+  .filter::-webkit-scrollbar-thumb {
+    
+    background: none;
+  }
+  
+  /* Style the corner (the space between the vertical and horizontal scrollbars) */
+  .filter::-webkit-scrollbar-corner {
+    background: #1d084f; /* Set the background color of the corner */
+  }
+  
+
+
+
+
+
+
+
+
+.flexbox{
+
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid rgb(182, 178, 178);
+    padding: 2%;
+ background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  
+    
+}
+.flexbox>div{
+    width: 21%;
+    border: 1px solid rgb(182, 178, 178);
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 20px;
+   transition: box-shadow 0.3s;
+   
+    
+}
+.flexbox>div:hover{
+    box-shadow: 1px 1px 15px gray;
+}
+.img_container{
+    widows: 100%;
+    margin: 0px;
+    height: 150px;
+   
+}
+.img_container>img{
+    width: 100%;
+    height: 150px;
+}
+.flexbox>div>button{
+    width: 90%;
+    margin: 1% 5%;
+    background-color: white;
+    color: rgb(212, 133, 69);
+    border: 2px solid rgb(212, 133, 69);
+    padding: 2% 10%;
+    
+}
+.flexbox>div>button:hover{
+    cursor: pointer;
+    background-color: antiquewhite;
+}
+.flexbox>div>p{
+    width: 90%;
+    margin: 10px auto;
+
+}
+
+
+
+.footer{
+    text-align: center;
+    background-color: rgb(199, 191, 191);
+    padding-bottom: 50px;
+}
+.footer>img{
+    width: 5%;
+}
+.footer>div{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    
+    width: 5%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.sponser-head{
+    text-align: center;
+    padding: 2%;
+    background-color: white;
+    color: rgb(212, 133, 69);
+}
+.sponser{
+    background-color: white;
+    padding: 3%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+}
+.sponser>div{
+    text-align: center;
+}
+
+
+@media only screen and (max-width:650px) {
+
+    .toggle-logo {
+        display: block;
+        color: white;
+    }
+
+    .navbar {
+        display: none;
+
+    }
+   
+    header{
+        padding: 1% 3%;
+    }
+    .grid-container{
+        
+        grid-template-columns: 3fr 5fr;
+    }
+    #slider{
+        height: 250px;
+    }
+    #slider>div>img{
+        height: 250px;
+    }
+    #slider>i{
+        margin-top: 100px;
+        margin-bottom: 108px;
+        margin-right: 2px;
+    }
+    .flexbox>div{
+        width: 41%;
+       
+    }
+    
+}
+
+@media only screen and (max-width:400px) {
+    .flexbox>div{
+        width: 71%;
+       
+    }
+}

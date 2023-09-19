@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheets/rgister.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Document</title>
+</head>
+<body>
+
+ <!-- header -->
+ <header>
+    <div class="logo"><img src="http://clipart-library.com/images_k/car-transparent-background/car-transparent-background-22.png" alt=""></div>
+    <div class="navbar">
+        <a href="/"><i class="fa-solid fa-house"></i><span>Home</span></a>
+        <a href="./about.html"><i class="fa-solid fa-address-card"></i><span>About</span></a>
+        <a href="#"><i class="fa-solid fa-address-book"></i><span>Contact</span></a>
+        <a href="./register.html"><i class="fa-solid fa-user"></i><span>Login</span></a>
+    </div>
+    <div class="toggle-logo" id="navbarToggle"><i class="fa-solid fa-bars"></i></div>
+</header>
+
+<!-- togglenavbar -->
+<div class="navbarclasstoggle" id="navbartoggle">
+    <a href="/"><i class="fa-solid fa-house"></i><span>Home</span></a>
+    <a href="./about.html"><i class="fa-solid fa-address-card"></i><span>About</span></a>
+    <a href="#"><i class="fa-solid fa-address-book"></i><span>Contact</span></a>
+    <a href="./register.html"><i class="fa-solid fa-user"></i><span>Login</span></a>
+</div>
+
+
+
+
+<div class="register-container">
+    <div class="grid_1">
+      <!-- <img src="./Screenshot 2023-08-20 151728.png" alt="Error"/> -->
+    </div>
+    <div class="grid_2">
+        <div class="form">
+            <form id="formsubmit">
+                <h1>Sign Up</h1>
+                <fieldset>
+                    <legend>Full Name</legend>
+                    <input type="text" id="fname" name="fname" placeholder="Enter Name.." autofocus />
+
+                </fieldset>
+                <span id="errfn"></span>
+                <fieldset>
+                    <legend>Email address</legend>
+                    <input type="text" id="email" name="email" placeholder="Enter Email.." />
+
+                </fieldset>
+                <span id="erre"></span>
+                <fieldset>
+                    <legend>Password</legend>
+                    <input type="password" id="password" name="password" placeholder="Enter Password.." />
+
+                </fieldset>
+                <span id="errp"></span>
+                <fieldset>
+                    <legend>Contact</legend>
+                    <input type="number" id="number" name="number" placeholder="Enter Contact.."/>
+
+                </fieldset>
+                <span id="errc"></span>
+                <div class="terms"><input type="checkbox" id="checkbox" name="checkbox"/>
+                <label for="checkbox">By creeating an account, you agree to our <span>terms</span> and <span>privacy policy.</span></label><br></div>
+                <span id="errch"></span>
+
+                <div class="browsecontainer">
+                    <label for="file" class="browsebtn">Upload Resume</label>
+                    <input type="file" id="file" value="Uplaod" name="file" value="Upload" accept=".pdf,.jpg" /></div>
+              
+                <input type="submit" id="submit" name="submit" value="Create Account" />
+                
+                <hr>
+                
+                <a href="https://accounts.google.com/AddSession/identifier?service=accountsettings&continue=https%3A%2F%2Fmyaccount.google.com%2F&ec=GAlAwAE&hl=en&authuser=0&flowName=GlifWebSignIn&flowEntry=AddSession" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2000px-Google_%22G%22_Logo.svg.png" /><span>Google Account</span></a>
+                <a href="https://www.facebook.com/" target="_blank"><img style="width:25px;" src="https://www.teahub.io/photos/full/11-115962_facebook-logo-png-transparent-background-facebook-png.png" /><span>Facebook Account</span></a>
+                <br>
+                <div class="login" href="">Already have an Account? <span>Login</span></div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!-- footer -->
+<div class="footer">
+    <img src="http://clipart-library.com/images_k/car-transparent-background/car-transparent-background-22.png" alt="">
+
+    <h3>Thank You for Visiting...</h3>
+    <br>
+    <div>  <i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+   </div>
+   <p>Copyright &copy; Satna Car Motors Pvt. Ltd.</p>
+</div>
+
+
+<script src="../javascripts/register.js"></script>
+</body>
+</html>
